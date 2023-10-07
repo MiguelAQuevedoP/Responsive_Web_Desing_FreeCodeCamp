@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CatPhotoApp</title>
+</head>
+<body>
+  <main>
+    <h1>CatPhotoApp</h1>
+    <section>
+      <h2>CatPhotos</h2>
+      <p>See more 
+        <a href="https://www.google.com/search?q=fotos+de+gatos&client=firefox-b-d&sca_esv=571483486&tbm=isch&sxsrf=AM9HkKkE8q3AtfXS72miPP2TSMGiKIc2Iw:1696648015790&source=lnms&sa=X&ved=2ahUKEwiBt6iy-uKBAxXdlWoFHUFdDqAQ_AUoAXoECAEQAw&biw=1280&bih=652&dpr=1"> cat photos </a> 
+        in google gallery
+      </p>
+      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.elmueble.com%2Fmascotas%2Frazas-gatos_51032&psig=AOvVaw2vgYC7F8aX7k1Im0S5mTnd&ust=1696734531226000&source=images&cd=vfe&opi=89978449&ved=0CBMQjhxqFwoTCODA4Or64oEDFQAAAAAdAAAAABAK">
+        <img src="images/img.png" alt="orange cat" weight="300px" height="250px">
+      </a>
+    </section>
+    <section>
+      <h2>Cat List</h2>
+      <h3>Things cats love:</h3>
+      <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <figure>
+        <img src="images/catsseegreenlasers.jpg" alt="cat watching a green laser" weight="300px" height="200px">
+        <figcaption>Cats <em>love</em> see laser pointers</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Top 3 things cats hate:</h2>
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <figure>
+        <img src="images/catandthunder.jpg" alt="cat and thunder" weight="300px" height="200px">
+        <figcaption>Cats <strong><em>hate</em></strong> thunders</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Cat Form</h2>
+      <form action="#submit-cat-photo">
+        <fieldset>
+          <legend>Is your cat an indoor or outdoor cat?</legend>
+          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>Indoor</label>
+          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor</label>
+        </fieldset>
+        <fieldset>
+          <legend>What's your cat's personality?</legend>
+          <input id="loving" type="checkbox" name="personality" value="loving" checked><label for="loving">Loving</label>
+          <input id="lazy" type="checkbox" name="personality" value="lazy"><label for="lazy">Lazy</label>
+          <input id="energetic" type="checkbox" name="personality" value="energetic"><label for="energetic">Energetic</label>
+        </fieldset>
+        <input type="text" name="catUrl" id="txtCatUrl" placeholder="Insert cat URL" required>
+        <button type="submit">Submit</button>
+      </form>      
+    </section>
+  </main>
+  <footer>
+    <p>
+      No copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+    </p>
+  </footer>
+</body>
+</html>
