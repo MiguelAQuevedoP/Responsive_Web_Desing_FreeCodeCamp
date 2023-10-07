@@ -1,0 +1,80 @@
+body{
+  background-image: url("../images/backgroud-coffee.jpg");
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
+}
+.main-menu{
+  width: 80%;
+  background-color:burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+}
+.titleCoffee{
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.established{
+  text-align: center;
+  margin-top: -10px;
+}
+h1,h2,p{
+  text-align: center;
+}
+hr {
+  font-size: 3px;
+  background-color: brown;
+  border-color: brown;
+  border-radius: 100%;
+}
+.subtitle {
+  margin-top: -1px;
+}
+.hr-footer {
+  margin-top: 5px;
+}
+.icon {
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -15px;
+}
+.item p{
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.type-coffee, .type-pie {
+  text-align: left;
+  width: 75%;
+}
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+a {
+  color: black;
+}
+a:visited {
+  color:black;
+}
+a:hover{
+  color:brown;
+}
+a:active{
+  color: brown;
+}
+.address{
+  margin-bottom: 5px;
+}
+footer {
+  font-size: 14px;
+}
