@@ -1,0 +1,94 @@
+.main {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  text-align: center;
+}
+.div-title {
+  /*
+  linear-gradient(grados, color1, color2, ..., colorN)
+  -la funcion tiene gardos=180deg por defecto donde se pueden variar.
+  -puede aceptar N numero de colores, para funcionar necesita minimo 2 colores
+  -se introduce en la propiedad de <background>, no en la de <background-color>
+  */
+  background: linear-gradient(#900C3F, #C70039, #F94C10);
+  border-radius: 10px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+h1 {
+  /*
+  La funcion <text-shadow: xlabel ylabel color> es para darle sombra al texto
+  sin importar su forma.
+  xlabel: es el corrimiento en el eje X
+  ylabel: es el corrieminto en el eje Y
+  Tanto xlabel como ylabel por defecto son 0px por lo que no se mostrará la sombra.
+  */
+  text-shadow: 2px 2px #900C3F;
+  color: #F8DE22;
+}
+.container-colors {
+  width: 50%;
+  background-color: #191825;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.marker {
+  width: 200px;
+  height: 25px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+/*
+A CONTINUACION SE TRATARÁN DE HACER LAS MAYORES FORMAS POSIBLES CON LA SOMBRA
+Y CON EL GRADIENTE.
+*/
+/*
+  Para cada uno de los ejercicios se realizó una variacion de 45
+  en los grados de la funcion <linear-gradient>
+*/
+.labels {
+  background: linear-gradient(0deg,#FFA1F5,#BC7AF9,#F8FF95);
+  /*
+  La funcion <box-shadow: xlabel ylabel blur spread color> da sombra a las formas
+  -xlabel & ylabel son los corrimientos en los ejes.
+  -blur es el radio de difuminación.
+  -spread es la propagacion de la sombra.
+  En este caso solo se hace corrimiento en los ejes.
+  */
+  box-shadow: 5px 5px 0 0 #BC7AF9;
+}
+.blur {
+  /*
+  En este caso se hace un modificacion en el radio de difuminación.
+  */
+  background: linear-gradient(45deg, #45FFCA,#FEFFAC,#FFB6D9);
+  box-shadow: 0 0 20px 0 #D67BFF;
+}
+.spread {
+  /*
+  En este caso se modificó la propagacion de sombra
+  */
+  background: linear-gradient(90deg, #793FDF,#7091F5,#97FFF4);
+  box-shadow: 0 0 0 5px#FFFD8C;
+}
+.blur-spread {
+  /*
+  En este caso se modificó la propagacion y radio de difuminacion de la sombra
+  */
+  background: linear-gradient(135deg, #F11A7B, #982176, #3E001F);
+  box-shadow: 0 0 10px 10px #FFE5AD;
+}
+.labels-blur-spread {
+  /*
+  En este ultimo ejercicio se modificaron todas las propiedades de
+  <box-shadow>
+  */
+  background: linear-gradient(180deg, #0079FF, #00DFA2, #F6FA70);
+  box-shadow: 10px 10px 20px 5px #FF0060;
+}

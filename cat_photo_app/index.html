@@ -1,3 +1,5 @@
+<!-- TODO: This is the first exercise of the course of responsive design
+  Is a web dedicated to cats and somethings about it-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +12,12 @@
     <h1>CatPhotoApp</h1>
     <section>
       <h2>CatPhotos</h2>
+      <!--the link is a search of "fotos de gatos" in google images-->
       <p>See more 
         <a href="https://www.google.com/search?q=fotos+de+gatos&client=firefox-b-d&sca_esv=571483486&tbm=isch&sxsrf=AM9HkKkE8q3AtfXS72miPP2TSMGiKIc2Iw:1696648015790&source=lnms&sa=X&ved=2ahUKEwiBt6iy-uKBAxXdlWoFHUFdDqAQ_AUoAXoECAEQAw&biw=1280&bih=652&dpr=1"> cat photos </a> 
         in google gallery
       </p>
+      <!-- this image is like a button because if you press it this redirect to the link-->
       <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.elmueble.com%2Fmascotas%2Frazas-gatos_51032&psig=AOvVaw2vgYC7F8aX7k1Im0S5mTnd&ust=1696734531226000&source=images&cd=vfe&opi=89978449&ved=0CBMQjhxqFwoTCODA4Or64oEDFQAAAAAdAAAAABAK">
         <img src="images/img.png" alt="orange cat" weight="300px" height="250px">
       </a>
@@ -21,6 +25,7 @@
     <section>
       <h2>Cat List</h2>
       <h3>Things cats love:</h3>
+      <!--The ul is a list and the li just put a point before text for the list-->
       <ul>
         <li>cat nip</li>
         <li>laser pointers</li>
@@ -28,11 +33,13 @@
       </ul>
       <figure>
         <img src="images/catsseegreenlasers.jpg" alt="cat watching a green laser" weight="300px" height="200px">
+        <!--figcaption is for put a description to the image-->
         <figcaption>Cats <em>love</em> see laser pointers</figcaption>
       </figure>
     </section>
     <section>
       <h2>Top 3 things cats hate:</h2>
+      <!--The ol is an order list and the li put a number before the text-->
       <ol>
         <li>flea treatment</li>
         <li>thunder</li>
@@ -40,23 +47,39 @@
       </ol>
       <figure>
         <img src="images/catandthunder.jpg" alt="cat and thunder" weight="300px" height="200px">
+        <!--Here <strong> is a bold font to the text between it.
+            <em> put the text in italic style-->
         <figcaption>Cats <strong><em>hate</em></strong> thunders</figcaption>
       </figure>
     </section>
     <section>
       <h2>Cat Form</h2>
+      <!--form is a formulary-->
       <form action="#submit-cat-photo">
+        <!--<fieldset> es un recuadro donde se pueden poner diferentes opciones de los formularios-->
         <fieldset>
+          <!--<legend> Esta leyenda va a ser el texto que encierra el recuadro,
+              es como el enunciado principal-->
           <legend>Is your cat an indoor or outdoor cat?</legend>
+          <!--<input> junto con la propiedad "type="radio"" es un tipo de entrada que permite
+          marcar en un circulo.
+              Se observa que tambien está la propiedad checked, ésta propiedad permite que
+              al iniciar la pagina ya este seleccionada esa opcion por defecto.
+              En un fieldset o similar es importante dejar solo una opcion checked-->
           <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>Indoor</label>
           <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor</label>
         </fieldset>
         <fieldset>
           <legend>What's your cat's personality?</legend>
+          <!-- Los input de tipo checkbox tiene la misma funcion que los radio, sin embargo,
+              estos son cuadrados y tienen alguna que otra diferencia leve.-->
           <input id="loving" type="checkbox" name="personality" value="loving" checked><label for="loving">Loving</label>
           <input id="lazy" type="checkbox" name="personality" value="lazy"><label for="lazy">Lazy</label>
           <input id="energetic" type="checkbox" name="personality" value="energetic"><label for="energetic">Energetic</label>
         </fieldset>
+        <!--los input de tipo text son casillas donde se permite escribir cualquier texto.
+            La propiedad placeholder muestra un texto por defecto que se elimina cuando
+            se seleccione la casilla.-->
         <input type="text" name="catUrl" id="txtCatUrl" placeholder="Insert cat URL" required>
         <button type="submit">Submit</button>
       </form>      
