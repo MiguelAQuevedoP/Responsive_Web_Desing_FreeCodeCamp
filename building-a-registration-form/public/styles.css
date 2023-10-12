@@ -1,0 +1,120 @@
+/*A los estilos de este ejercicio decidí hacer cambios
+menores, como lo es un header y footer para un toque de personalización*/
+header {
+  width: 60%;
+  background: linear-gradient(90deg, #6C567B, #C06C84, #6C567B);
+  color: #F8d1f0;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+body {
+  width: 100%;
+  /*La medida vh se refiere al porcentaje del alto del viewport 
+  (la ventana gráfica del navegador) que ocupa un elemento.
+  Un valor de 1vh es igual al 1% de la altura del viewport.
+  Por ejemplo, si tienes un elemento con height: 50vh;, ocupará
+  la mitad de la altura del viewport, independientemente del
+  tamaño de la pantalla.*/
+  height: 100vh;
+  margin: 0;
+  background-color: #6C567B;
+  color: #F8d1f0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1, p {
+  /*la unidad em se basa en el tamaño de fuente del elemento
+  actual en lugar del elemento raíz. Por ejemplo, si el tamaño
+  de fuente de un elemento padre es 16px, y un elemento hijo
+  tiene font-size: 2em;, el tamaño de fuente del elemento hijo
+  será 32px (2 veces el tamaño del padre).*/
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  /*La unidad de medida vw en CSS significa "Viewport Width"
+  (Ancho del Viewport), y se utiliza para especificar tamaños
+  y dimensiones en relación con el ancho del viewport*/
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #F67280;
+}
+
+fieldset:last-of-type{
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  color: #F8d1f0;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+input, textarea {
+  background-color: #C06C84;
+  color: #f1d5d5;
+  border: none;
+}
+
+select, option {
+  background-color: #f1d5d5;
+  color:#111
+}
+
+/*.inline se configura para que las casillas y textos
+queden en una sola linea*/
+.inline {
+  width: unset;
+  margin: 0 0.5rem 0 0;
+  vertical-align: middle;
+}
+
+/*Ésta es una manera de llamar a los componentes por su atributo*/
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  /*La medida rem (Root em) es similar a la medida em*/
+  font-size: 1.1rem;
+  background-color: #F8d1f0;
+  color: #6C567B;
+  box-shadow: 0 0 7px 7px #f1d5d5;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+a {
+  color: #000;
+}
+
+footer {
+  padding: 10px;
+  color: #f1d5d5;
+  width: 60%;
+  background: linear-gradient(90deg, #6C567B, #C06C84, #6C567B);
+  margin-right: auto;
+  margin-left: auto;
+}
