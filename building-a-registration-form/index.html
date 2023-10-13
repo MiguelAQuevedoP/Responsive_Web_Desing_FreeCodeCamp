@@ -17,6 +17,10 @@
   <form action="post">
     <fieldset>
       <label for="first-name">Enter your first name:
+        <!--
+          TODO: la propiedad required para los input se introduce con el fin de que
+          el formulario no se envié si tiene campos vacios
+        -->
         <input type="text" id="first-name" required >
       </label>
       <label for="last-name">Enter your last name:
@@ -26,6 +30,11 @@
         <input type="email" id="email" required >
       </label>
       <label for="password">Create a password:
+        <!--
+          TODO: Algunos input se pueden liminar en cuanto a la cantidad de caracteres
+          ingresados, tambien se pueden limitar qué tipo de caracteres pueden ser 
+          ingresados.
+        -->
         <input type="password" id="password" minlength="8" required >
       </label>
     </fieldset>
@@ -43,6 +52,11 @@
         <input type="file" name="profile-picture" id="profile-picture">
       </label>
       <label for="age">Input your age years:
+        <!--
+          TODO: Los input de tipo number se pueden limitar tanto en un minimo numero
+          como en su maximo, esto ayuda en este caso a  limitar la edad con la que se puede
+          registrar en el formulario
+        -->
         <input type="number" name="age" id="age" min="13" max="120">
       </label>
       <label for="referrer">How did you hear about us:
