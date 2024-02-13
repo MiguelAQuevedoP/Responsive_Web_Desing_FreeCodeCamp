@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family:'Open Sans', sans-serif;
+}
+/* Estilo del contenedor principal */
+.label {
+    border: 2px solid black;
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+}
+/* Estilo del encabezado */
+header h1 {
+    text-align: center;
+    margin: -4px 0;
+    letter-spacing: 0.15px;
+}
+/* Estilo de párrafos generales */
+p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.large {
+    height: 10px;
+}
+
+.large, .medium {
+    background-color: black;
+    border: 0;
+}
+
+.medium {
+    height: 5px;
+}
+/* Estilo de texto más pequeño */
+.small-text {
+    font-size: 0.85rem;
+}
+/* Diseño de la sección de información calórica */
+.calories-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+/* Estilo específico para títulos en información calórica */
+.calories-info h2 {
+    margin: 0;
+}
+/* Estilo de la sección izquierda de la información calórica */
+.left-container p {
+    margin: -5px -2px;
+    font-size: 2em;
+    font-weight: 700;
+}
+/* Estilo del valor calórico en la información calórica */
+.calories-info span {
+    margin: -7px -2px;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+/* Alineación a la derecha de ciertos elementos */
+.right {
+    justify-content: flex-end;
+}
+/* Sangría para ciertos elementos */
+.indent {
+    margin-left: 1em;
+}
+/* Doble sangría para ciertos elementos */
+.double-indent {
+    margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+/* Estilo de la nota informativa al final del contenedor */
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8pxs;
+}
